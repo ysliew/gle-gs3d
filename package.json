@@ -27,7 +27,8 @@
   },
   "homepage": "https://github.com/guyettinger/gle-gs3d#readme",
   "dependencies": {
-    "three": "^0.157.0"
+    "three": "^0.157.0",
+    "tslib": "^2.6.2"
   },
   "devDependencies": {
     "@rollup/plugin-commonjs": "^25.0.4",
