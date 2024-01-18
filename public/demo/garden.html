@@ -28,11 +28,21 @@
 <script type="module">
     import { Viewer } from 'gle-gs3d';
 
+    // const viewer = new Viewer({
+    //     'cameraUp': [0, -1, -0.6],
+    //     'initialCameraPosition': [-1, -4, 6],
+    //     'initialCameraLookAt': [0, 4, 0]
+    // });
+
+
     const viewer = new Viewer({
-        'cameraUp': [0, -1, -0.6],
-        'initialCameraPosition': [-1, -4, 6],
-        'initialCameraLookAt': [0, 4, 0]
+        // 'cameraUp': [0, -1, -0.6],
+        'cameraUp': [0, 0, 1],
+        'initialCameraPosition': [0.9, -0.23, 0.24],
+        'initialCameraLookAt': [-1.58, 1.35, -0.78]
     });
+
+
     viewer.init();
     viewer.loadFile('assets/data/garden/garden_high.splat', {
         'halfPrecisionCovariancesOnGPU': true
